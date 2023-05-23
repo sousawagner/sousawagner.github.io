@@ -80,16 +80,16 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://media.licdn.com/dms/image/D4D03AQEO2f_dfEUxYA/profile-displayphoto-shrink_800_800/0/1679073257526?e=1690416000&v=beta&t=dEMEPfDj_KRpK-hg-R6urDLNySE4kpn4bAMvMGkf5Hs
+avatar: "/assets/images/my.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
 
 comments:
-  active: 'giscus' # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: disqus # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: sousawagner # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
     repo: # <gh-username>/<repo>

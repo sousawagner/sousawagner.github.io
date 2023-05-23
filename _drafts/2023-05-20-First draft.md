@@ -1,17 +1,18 @@
 ---
-title: Draft Page
+title: draft
 date: 2023-05-20
-categories: [teste, nao considerar]
-tags: [teste]     # TAG names should always be lowercase
+categories: [first]
+tags: [notes]     # TAG names should always be lowercase
 published: true
-author: wagner
 math: true
+comments: false
 ---
 
 # Geral
 >-> Coeficiente angular (declividade): $$ m = tg*α $$ <br> 
 -> Coeficiente linear: **n** é o ponto onde a reta corta o eixo ***y***
 {: .prompt-info }
+
 
 <div class="video-container">
     {% include embed/youtube.html id='q3nnhpdxUNQ' %}
