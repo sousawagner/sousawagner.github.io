@@ -20,7 +20,7 @@ timezone: America/Sao_Paulo
 
 title: Wagner Sousa # the main title
 
-tagline: Meu blog e portfolio :) # it will display as the sub-title
+tagline: Meu blog :) # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -31,8 +31,8 @@ url: "https://sousawagner.github.io"
 github:
   username: sousawagner # change to your github username
 
-twitter:
-  username: twitter_username # change to your twitter username
+#twitter:
+#  username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
@@ -45,7 +45,7 @@ social:
     - https://github.com/sousawagner # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    # https://www.linkedin.com/in/wagner321
 
 google_site_verification: # fill in to your verification string
 
@@ -77,10 +77,10 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: 'https://ik.imagekit.io/n2gmxjju7nh'
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/images/my.png"
+avatar: "/commons/avatar.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
