@@ -136,6 +136,8 @@ A independência de dispositivo é um conceito fundamental no projeto de softwar
 
 A nomeação uniforme também é um objetivo importante no software de E/S. Isso significa que o nome de um arquivo ou dispositivo deve ser uma cadeia de caracteres ou um número inteiro e não depender do dispositivo em si. No UNIX, por exemplo, todos os discos podem ser integrados na hierarquia do sistema de arquivos de maneiras arbitrárias, permitindo que os usuários acessem os dispositivos sem precisar saber qual nome corresponde a qual dispositivo.
 
+>Imagine que você esteja trabalhando em um sistema operacional e precisa realizar a E/S em um dispositivo específico, como uma impressora. Em vez de se preocupar com detalhes técnicos, como endereços físicos ou portas de comunicação, você pode usar a nomeação uniforme para identificar e acessar esse dispositivo.
+
 O tratamento de erros é outra questão essencial na E/S. Erros devem ser tratados o mais próximo possível do hardware. Se ocorrer um erro de leitura, por exemplo, o controlador deve tentar corrigi-lo ou o driver do dispositivo deve lidar com a situação, como tentar ler o bloco novamente. A recuperação de erros pode ser feita de forma transparente em níveis baixos sem que os níveis superiores sejam informados sobre o erro.
 
 A escolha entre transferências síncronas (bloqueantes) e assíncronas (orientadas à interrupção) também é relevante. A maioria das E/S físicas é assíncrona, o que significa que a CPU inicia a transferência e continua a executar outras tarefas até que a interrupção ocorra. Porém, para facilitar a programação do usuário, as operações de E/S podem parecer bloqueantes, fazendo com que o programa seja suspenso até que os dados estejam disponíveis no buffer. No entanto, algumas aplicações de alto desempenho exigem controle detalhado da E/S e podem usar operações assíncronas.
@@ -336,6 +338,10 @@ Neste capítulo, é discutido o papel dos controladores de dispositivos e a impo
 Resumo:
 
 O texto aborda a questão do software de Entrada/Saída (E/S) em um sistema operacional. Ele destaca que parte do software de E/S é específico para cada dispositivo, enquanto outras partes são independentes. O limite entre os drivers e o software independente do dispositivo depende do sistema e do dispositivo, e algumas funções podem ser realizadas tanto de forma independente quanto nos drivers. O software independente do dispositivo tem a função de realizar as funções de E/S comuns a todos os dispositivos e fornecer uma interface uniforme para o software no nível do usuário.
+
+>Imagine que você esteja desenvolvendo um sistema operacional que precisa suportar diferentes tipos de dispositivos de armazenamento, como discos rígidos e pen drives. Cada dispositivo tem suas próprias peculiaridades e detalhes técnicos, mas há algumas operações básicas que são comuns a todos eles, como ler e gravar dados.
+
+Nesse caso, o software de E/S independente de dispositivo entra em ação. Ele é responsável por implementar as funções de leitura e gravação genéricas, que podem ser aplicadas a qualquer dispositivo de armazenamento, independentemente das diferenças técnicas entre eles.
 
 Tópicos do texto:
 1. Interface uniforme para os drivers dos dispositivos
